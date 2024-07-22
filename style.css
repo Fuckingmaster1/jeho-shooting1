@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+#gameArea {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#player {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+}
+
+.projectile {
+  position: absolute;
+  width: 5px;
+  height: 10px;
+  background-color: red;
+}
+
+.enemy {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: green;
+}
+
+.enemyProjectile {
+  position: absolute;
+  width: 5px;
+  height: 10px;
+  background-color: yellow;
+}
+
+#gameOverScreen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  display: none;
+  text-align: center;
+}
+
+#restartButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 20px;
+}
